@@ -71,7 +71,7 @@ main {
     font-weight: 600;
   }
 
-  & h3 {
+  & h2 {
     font-size: 0.95rem;
     font-weight: 700;
     color: var(--Green);
