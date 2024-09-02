@@ -8,7 +8,17 @@
   --Grey-800: hsl(0, 0%, 12%);
   --Grey-900: hsl(0, 0%, 8%);
 }
-::selection{
+
+.dark {
+  --Green: hsl(75, 94%, 43%);
+  --lightGreen: hsla(75, 94%, 20%, 0.340);
+  --White: hsl(0, 0%, 0%);
+  --Grey-700: hsl(0, 0%, 80%);
+  --Grey-800: hsl(0, 0%, 88%);
+  --Grey-900: hsl(0, 0%, 92%);
+}
+
+::selection {
   background: var(--lightGreen);
 }
 
@@ -29,6 +39,7 @@ body {
 body {
   font-family: "Inter", system-ui;
   background: var(--Grey-900);
+  transition: 0.4s;
 }
 
 main {
@@ -37,6 +48,7 @@ main {
   display: grid;
   place-items: center;
   padding: 1.5em;
+  gap: 1.5rem
 }
 
 .wrapper {
@@ -46,6 +58,7 @@ main {
   color: var(--White);
   padding: 2.5em;
   border-radius: 15px;
+  transition: 0.4s;
 }
 
 .profile_area {
@@ -111,6 +124,23 @@ main {
   }
 }
 
+button {
+  align-self: flex-start;
+  font-family: "Inter", system-ui;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: var(--Grey-700);
+  color: var(--White);
+  border-radius: 0.3rem;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--Green);
+    color: #000;
+  }
+}
 
 @media (max-width: 500px) {
   .wrapper {
