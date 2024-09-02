@@ -2,7 +2,7 @@
 
 :root {
   --Green: hsl(75, 94%, 57%);
-  --lightGreen: hsla(75, 94%, 57%, 0.212);
+  --lightGreen: hsla(75, 94%, 80%, 0.340);
   --White: hsl(0, 0%, 100%);
   --Grey-700: hsl(0, 0%, 20%);
   --Grey-800: hsl(0, 0%, 12%);
