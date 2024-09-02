@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --lightGreen: hsla(75, 94%, 57%, 0.212);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+::selection{
+  background: var(--lightGreen);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", system-ui;
+  background: var(--Grey-900);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 1.5em;
+}
+
+.wrapper {
+  max-width: 385px;
+  width: 100%;
+  background: var(--Grey-800);
+  color: var(--White);
+  padding: 2.5em;
+  border-radius: 15px;
+}
+
+.profile_area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.profile_area img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.profile_area .profile_info {
+  text-align: center;
+  line-height: 35px;
+
+  & h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  & h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--Green);
+  }
+}
+
+
+.wrapper p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 1.4em 0 2em 0;
+}
+
+.social_links {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+
+
+  & a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: var(--Grey-700);
+    color: var(--White);
+    padding: 1em 0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    transition: 150ms;
+
+    &:hover {
+      background: var(--Green);
+      color: #000;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 1.5em;
+  }
+}
